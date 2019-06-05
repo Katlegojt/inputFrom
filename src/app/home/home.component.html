@@ -1,0 +1,26 @@
+
+  <body>
+    
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Username</th>
+      <th>Email</th>
+      <th>Street</th>
+      <th>City</th>
+    </tr>
+  
+   <tr *ngFor="let item of list">
+    
+      
+        <td>{{item.name}}</td>
+        <td>{{item.username}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.address.street}}</td>
+        <td>{{item.address.city}}</td>
+      </tr>
+    </table>
+  </body>
+
+
+<router-outlet></router-outlet>
